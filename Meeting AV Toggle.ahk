@@ -23,7 +23,6 @@ Loop, %fensterID% { ; will run loop for number of windows in array
   WinActivate, % "ahk_id " fensterID%A_Index%
   Send ^+m
   Send !a
-  Send ^m
 }
 SoundBeep, 200, 100
 WinActivate, ahk_id %active_id%
