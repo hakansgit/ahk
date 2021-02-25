@@ -12,13 +12,13 @@
 ; }
 
 #UseHook
-F12::
+F8::
 ;#HotkeyInterval 200
 
 WinGet, active_id, ID, A
 SetTitleMatchMode, 2
 ;DetectHiddenWindows, O
-WinGet, fensterID, List, Meeting
+WinGet, fensterID, List, Microsoft Teams
 Loop, %fensterID% { ; will run loop for number of windows in array
   WinActivate, % "ahk_id " fensterID%A_Index%
   Send ^+m
@@ -28,13 +28,13 @@ SoundBeep, 200, 100
 WinActivate, ahk_id %active_id%
 Return
 
-F11::
+F7::
 ;#HotkeyInterval 200
 
 WinGet, active_id, ID, A
 SetTitleMatchMode, 2
 ;DetectHiddenWindows, On
-WinGet, fensterID, List, Meeting
+WinGet, fensterID, List, Microsoft Teams
 Loop, %fensterID% { ; will run loop for number of windows in array
   WinActivate, % "ahk_id " fensterID%A_Index%
   Send ^+o
